@@ -4,7 +4,7 @@
 
 //JS is dynamically typed. This means that variables in JS can hold values of any type without specifying what type it will hold ahead of time.
 
-const score = 100; // note we didn't define datatype fpr this variable
+const score = 100; // note we didn't define datatype for this variable
 const scoreValue = 100.3;
 
 const isLoggedIn = false;

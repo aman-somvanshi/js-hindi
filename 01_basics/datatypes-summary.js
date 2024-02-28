@@ -28,11 +28,44 @@ let myObj = {
 };
 
 const myFunction = function () {
-  console.log("Hello World");
+  //console.log("Hello World");
 };
 
 
 // console.log(typeof outsideTemp); //note that null gives object as datatype
 // console.log(typeof NaN);   // note that NaN returns number as datatype
 
-console.log(typeof myFunction);
+//console.log(typeof myFunction);
+
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        // Memories
+
+// Stack is used in Primitive datatypes---always gives a copy of the defined variable
+
+// Heap is used in non-Primitive datatypes--- gives a reference of the Original value
+
+let myName="Aman"
+
+let anotherName=myName
+anotherName="C3PO"
+console.log(anotherName);
+console.log(myName);
+
+// In above cases copies of the original value that is, of myName is being given to another Name
+
+//UserOne is stored in Heap
+let userOne={
+    email:"ab@google.com",
+    upi:"user@ybl"
+
+}
+
+let userTwo = userOne  // Here both the variables are being referenced to the same location
+
+userTwo.email="aman@google.com"
+console.log(userOne);
+console.log(userTwo);
+
+// above signifies that the value is changed in both the objects

@@ -87,3 +87,6 @@ console.log(instructor);
 //     {},
 //     {}
 // ]
+
+
+// Random User API on randomuser.me

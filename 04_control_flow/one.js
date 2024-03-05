@@ -34,6 +34,7 @@ if (2 === "2") {
 // if (balance > 500)
 // console.log(`test`),   //not recommended
 // console.log(`test2`);
+// console.log(`test`),  console.log(`test2`); //not recommended
 
 // if (balance < 500) {
 //     console.log(`less than 500`);
@@ -55,3 +56,5 @@ if (userLoggedIn && debitCard && 2 == 3) {
 if (loggedInFromEmail || loggedInFromGoogle) {
   console.log(`Allow to buy course`);
 }
+
+

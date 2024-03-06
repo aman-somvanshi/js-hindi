@@ -1,6 +1,6 @@
 // Array specific loops
 
-// for of loop
+// for of loop -- use in case of array
 
 // ["","",""]
 // [{},{},{}]

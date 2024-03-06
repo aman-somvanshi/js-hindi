@@ -1,4 +1,4 @@
-// For in loop
+// For in loop   --- use in case of objects
 
 const myObject = {
   js: "javascript",
@@ -15,8 +15,20 @@ for (const key in myObject) {
 
 const programming = ["js", "ruby", "py", "java", "cpp"];
 for (const key in programming) {
-  console.log(key); //gives the index of the array as output
-  console.log(programming[key]); //gives the elements of the array as output
+  // console.log(key); //gives the index of the array as output
+  // console.log(programming[key]); //gives the elements of the array as output
 }
 
 // Notice that for-in loop gives the index on printing the key, whereas the for-of loop would have printed the elements at each index
+
+// const map = new Map();
+// map.set("IN", "India");
+// map.set("USA", "United States of America");
+// map.set("Fr", "France");
+// map.set("IN", "India");
+
+// for (const key in map) {
+//   // console.log(key); //no output
+// }
+
+

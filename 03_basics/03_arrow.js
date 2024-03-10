@@ -23,7 +23,7 @@ const user = {
 // here {} is the current context because line 22 is running in the node environment
 // when just the line 22 is executed simply in a browser console it will give the following output ---
 //    Window {0: global, window: Window, self: Window, document: document, name: '', location: Location, …}
-// this happens because in a browser , the most gobal object is the Window object & this is exactly the same reason why we can  all the events of the window like clicks, etc.
+// this happens because in a browser , the most global object is the Window object & this is exactly the same reason why we can  all the events of the window like clicks, etc.
 
 // function chai(){
 //     let username="Aman"
@@ -68,3 +68,6 @@ const myArray = [2, 3, 4, 5, 6];
 // myArray.forEach(function () {})  //Even this is correct syntax
 // myArray.forEach( () => {}) // Also correct
 // myArray.forEach( () => ()) // Also correct
+
+
+

@@ -1,5 +1,6 @@
 // ForEach loop
 
+// forEach loop values does not return anything. Here , Output - undefined
 const coding = ["js", "ruby", "java", "python", "cpp"];
 // coding.forEach(function (item) {  //kyuki ye callback function h , toh iska naam nhi hota
 //   console.log(item);

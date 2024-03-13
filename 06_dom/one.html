@@ -22,8 +22,14 @@
       <h2>Lorem ipsum dolor sit.</h2>
       <h2>Lorem ipsum dolor sit.</h2>
       <form action="#">
-      <label for="Password">Enter your password</label>  
-      <input type="password" name="Password" id="p" placeholder="Enter your password" /></form>      
+        <label for="Password">Enter your password</label>
+        <input
+          type="password"
+          name="Password"
+          id="p"
+          placeholder="Enter your password"
+        />
+      </form>
       <p>
         document.querySelector('input[type="password"]') is used to get whatever
         is given as password
@@ -34,11 +40,21 @@
         console.log(document.getElementByID('firstHeading'))
       </p>
       <p>title.innerText will show only the visible text.</p>
-      <p>title.textContent will show all the text within the tags</p>
+      <p>
+        document.getElementById('title').innerText gives output :- 'DOM
+        Learning'
+      </p>
       <p>
         title.innerHTML will show the text along with the HTML syntax present
         within the tags
       </p>
+      <p>
+        document.getElementById('title').innerHTML gives output(view this line
+        in code editor to see correctly) :- '\n DOM Learning
+        <span style="display: none">test text</span>\n '
+      </p>
+      <p>title.textContent will show all the text within the tags</p>
+      <p>document.getElementById('title').textContent gives output :- '\n        DOM Learning test text\n      '</p>
       <p>
         document.getElementByClassName is used to get an element using the class
         name
@@ -53,44 +69,47 @@
         <li class="list-item">four</li>
       </ul>
 
-      <p>const turngreen = myul.querySelector('li')</p>
-      <p>turngreen.style.backgroundColor="green"</p>
-      <p>turngreen.innerText="five"</p>
+      <p>
+        const turngreen = myul.querySelector('li') will select the first list
+        item
+      </p>
+      <p>
+        turngreen.style.backgroundColor="green" will set the background color of
+        the first list item to green
+      </p>
+      <p>
+        turngreen.innerText="five" will set the text within the first li tag to
+        five
+      </p>
 
-      <p>const tempLiList=document.querySelectorAll('li')</p>
-      <p>tempLiList.style.color="green" won't work bacuse it is a NodeList</p>
+      <p>const tempLiList=document.querySelectorAll('li') selects all li tags in this document</p>
+      <p>tempLiList.style.color="green" won't work because it is a NodeList</p>
       <p>Note that you cannot use map on a NodeList</p>
       <p>tempLiList[0].style.color="green" will work</p>
-      <p>tempLiList.forEach( (li) => { li.style.backgroundColor="green" })</p>
+      <p>tempLiList.forEach( (li) => { li.style.backgroundColor="green" }) will set the background color of each list item to green</p>
 
       <p>
         const tempClassList=document.getElementsByClassName('list-item') will
         give an HTML Collection upon which forEach loop cannot be applied
       </p>
       <p>
-        const myConvertedArray = Array.from(tempClassList) converts tempClassList into an array and we
-        know that forEach can be applied over it
+        const myConvertedArray = Array.from(tempClassList) converts
+        tempClassList into an array and we know that forEach can be applied over
+        it
       </p>
       <p>myConvertedArray.forEach((li)=>li.style.color="orange")</p>
 
-      <p>const allH3=document.querySelectorAll('h3')
-      </p>
-      <p>allH3[1].innerText
-      </p>
-      <p>allH3.forEach((h)=>h.style.backgroundColor="red")
-      </p>
+      <p>const allH3=document.querySelectorAll('h3')</p>
+      <p>allH3[1].innerText</p>
+      <p>allH3.forEach((h)=>h.style.backgroundColor="red")</p>
 
-
-      <p>document.querySelectorAll('.mw-headline')
+      <p>document.querySelectorAll('.mw-headline') will select all the html elements with the class name 'mw-headline'</p>
+      <p>const myH2 = document.querySelectorAll('.mw-headline')</p>
+      <p>
+        myH2.forEach((h)=>{ h.style.color="black";
+        h.style.backgroundColor="green"; h.style.padding="10px";
+        h.innerText="Aman" })
       </p>
-      <p>const myH2 = document.querySelectorAll('.mw-headline')
-      </p>
-      <p>myH2.forEach((h)=>{
-        h.style.color="black";
-        h.style.backgroundColor="green";
-        h.style.padding="10px";
-        h.innerText="Aman"
-    })</p>
     </div>
   </body>
 </html>

@@ -22,6 +22,7 @@ parameter to be passed: precision — Number of significant digits. Must be in t
 console.log(otherNumber.toPrecision(4));//123.9
 const hundreds = 1000000;
 console.log(hundreds.toLocaleString('en-IN'));//10,00,000
+//.toLocaleString() returns a number as a string, using local language format.  Notice the position of commas in the above output
 
 //////////// ====== MATHS=======================///////////////////
 

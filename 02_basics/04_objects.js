@@ -5,10 +5,10 @@ tinderUser.id="123abc"
 tinderUser.name="Sammy"
 tinderUser.isLoggedIn="false"
 
-// console.log(tinderUser);
+console.log(tinderUser);//{ id: '123abc', name: 'Sammy', isLoggedIn: 'false' }
 
 const regularUser={
-    email:"some@gamil.com",
+    email:"some@gmail.com",
     fullname:{
         userfullname:{
             firstname:"Aman",
@@ -17,7 +17,7 @@ const regularUser={
     }
 }
 
-// console.log(regularUser.fullname.userfullname.firstname);
+// console.log(regularUser.fullname.userfullname.firstname);//Aman
 const obj1 ={
     1:"a",
     2:"b"
@@ -28,10 +28,14 @@ const obj2 ={
 }
 
 // const obj3={obj1,obj2}
+// console.log(obj3);//{ obj1: { '1': 'a', '2': 'b' }, obj2: { '2': 'c', '3': 'a' } }
+
 // const returnedTarget = Object.assign(target, source);
-// const obj3=Object.assign({},obj1, obj2)
+// const obj3=Object.assign({},      obj1, obj2)
+// console.log(obj3);////{ '1': 'a', '2': 'c', '3': 'a' }
+
 const obj3={...obj1,...obj2} //spread operator same as in array
-// console.log(obj3);
+console.log(obj3);//{ '1': 'a', '2': 'c', '3': 'a' }
 
 const users = [
     {
@@ -39,27 +43,27 @@ const users = [
         email:"a@gmail.com"
     },
     {
-        id:1,
-        email:"a@gmail.com"
+        id:2,
+        email:"b@gmail.com"
     },
     {
-        id:1,
-        email:"a@gmail.com"
+        id:3,
+        email:"c@gmail.com"
     },
     {
-        id:1,
-        email:"a@gmail.com"
+        id:4,
+        email:"d@gmail.com"
     },
 ]
 
-users[1].email
-// console.log(tinderUser);
+console.log(users[1].email)//b@gmail.com
+console.log(tinderUser);//{ id: '123abc', name: 'Sammy', isLoggedIn: 'false' }
 
-// console.log(Object.keys(tinderUser));
-// console.log(Object.values(tinderUser));
-// console.log(Object.entries(tinderUser));
+console.log(Object.keys(tinderUser));//[ 'id', 'name', 'isLoggedIn' ]
+console.log(Object.values(tinderUser));//[ '123abc', 'Sammy', 'false' ]
+console.log(Object.entries(tinderUser));//[ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', 'false' ] ]
 
-// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+console.log(tinderUser.hasOwnProperty('isLoggedIn'));//true
 
 
 
@@ -69,10 +73,11 @@ const course = {
     courseInstructor:"Aman"
 }
 
-// course.courseInstructor
+// console.log(course.courseInstructor)//Aman
+
+//Object destructuring
 const {courseInstructor: instructor} = course
-// console.log(courseInstructor);
-console.log(instructor);
+console.log(instructor);//Aman // note that we are able to access the value otside the object scope since insructor is declared outside the object
 
 //json
 // {
